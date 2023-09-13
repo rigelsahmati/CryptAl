@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Comfortaa:wght@500&family=Concert+One&family=Courgette&family=Fira+Sans:wght@600&family=Martian+Mono&family=Prata&family=Space+Mono&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="css/images/favicon.png" type="image/x-icon">
+    <title>CryptAL</title>
+</head>
+
+<body>
+    <p class="datasource"><a href="https://www.coingecko.com/" target="_blank">Powered by CoinGecko</a></p>
+    <header>
+        <h1>CryptAL</h1>
+        <ul>
+            <p></p>
+            <li><a href="#index">Home</a></li>
+            <li><a href="#table">Market</a></li>
+            <li><a href="#chose">Choose US</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+        <i class="fa-solid fa-bars-staggered hamburgerMenuBtn menuBtn"></i>
+    </header>
+    <div class="mobileMenu">
+        <i class="fa-solid fa-xmark close-mobile menuBtn"></i>
+        <nav>
+            <ul>
+                <li><a href="#index" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#table" onclick="toggleMenu()">Market</a></li>
+                <li><a href="#chose" onclick="toggleMenu()">Choose US</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="main" id="index">
+        <div class="title">
+            <img src="css/images/bitcoin.png" class="titleimg" alt="">
+            <h1>TRACK <br> <span>CRYPTO CURRENCIES PRICES </span></h1>
+            <a href="#table">See Prices <i class="fa-solid fa-angle-down"></i></a>
+            <img src="css/images/ethereum.png" class="titleimg" alt="">
+        </div>
+        <div class="trending">
+            <div class="trend">
+                <div class="img">
+                    <img class="trendImg" src="css/images/bitcoin.png" alt="">
+                </div>
+                <div class="name">
+                    <p class="trendName"><i class="fa-solid fa-spinner"></i></p><span class="change">00</span>
+                </div>
+                <div class="price">
+                    <span>$</span><span id="" class="trendInUsd">00</span>
+                </div>
+            </div>
+
+            <div class="trend">
+                <div class="img">
+                    <img class="trendImg" src="css/images/bitcoin.png" alt="">
+                </div>
+                <div class="name">
+                    <p class="trendName"><i class="fa-solid fa-spinner"></i></p><span class="change">00</span>
+                </div>
+                <div class="price">
+                    <span>$</span><span id="" class="trendInUsd">00</span>
+                </div>
+            </div>
+
+            <div class="trend">
+                <div class="img">
+                    <img class="trendImg" src="css/images/bitcoin.png" alt="">
+                </div>
+                <div class="name">
+                    <p class="trendName"><i class="fa-solid fa-spinner"></i></p><span class="change">00</span>
+                </div>
+                <div class="price">
+                    <span>$</span><span id="" class="trendInUsd">00</span>
+                </div>
+            </div>
+
+            <div class="trend">
+                <div class="img">
+                    <img class="trendImg" src="css/images/bitcoin.png" alt="">
+                </div>
+                <div class="name">
+                    <p class="trendName"><i class="fa-solid fa-spinner"></i></p><span class="change">00</span>
+                </div>
+                <div class="price">
+                    <span>$</span><span id="" class="trendInUsd">00</span>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="trendninfo">
+            <h1>Top 4 crypto in last 24h</h1>
+        </div>
+    </section>
+
+    <section class="table" id="table">
+        <h1>Market Update</h1>
+        <div class="dashboard">
+            <table>
+                <thead>
+                    <tr class="trOnhover">
+                        <th class="firstCol">Coin</th>
+                        <th>Price</th>
+                        <th>24h Change</th>
+                        <th>Market Cap</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstCol"><img class="coinImg" src="css/images/bitcoin.png" alt="">
+                            <p class="coinName"><i class="fa-solid fa-spinner"></i></p>
+                        </td>
+                        <td><span class="coinPrice"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coin24h"><i class="fa-solid fa-spinner"></i></span></td>
+                        <td><span class="coinMarket"><i class="fa-solid fa-spinner"></i></span></td>
+                    </tr>
+                    
+
+
+
+                </tbody>
+            </table>
+        </div>
+        <div class="buttons">
+            <button class="button active" id="btn1">1</button>
+            <button class="button" id="btn2">2</button>
+            <button class="button" id="btn3">3</button>
+            <button class="button" id="btn4">4</button>
+            <button class="button" id="btn5">5</button>
+        </div>
+    </section>
+
+    <section class="chose" id="chose">
+        <div class="choseTitle">
+            <h1>WHY</h1> <span>CHOOSE US</span>
+        </div>
+
+        <div class="mainChose">
+            <div class="choseInfo">
+                <div class="choseBox">
+                    <i class="fa-solid fa-wallet"></i>
+                    <div class="choseBox-Text">
+                        <h4>CONNECT YOUR WALLET</h4>
+                        <p>Use Trust Wallet, Metamask or to connect to the app.</p>
+                    </div>
+                </div>
+                <div class="choseBox">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <div class="choseBox-Text">
+                        <h4>SELECT YOUR QUANTITY</h4>
+                        <p>Upload your crypto and set a title, description and price.</p>
+                    </div>
+                </div>
+                <div class="choseBox">
+                    <i class="fa-solid fa-bolt"></i>
+                    <div class="choseBox-Text">
+                        <h4>CONFIRM TRANSACTION</h4>
+                        <p>Earn by selling your crypto on our marketplace.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="choseImg">
+                <img src="css/images/chooseImg.png" alt="">
+            </div>
+            <div class="choseInfo">
+                <div class="choseBox">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                    <div class="choseBox-Text">
+                        <h4>RECEIVE YOUR OWN NFTS</h4>
+                        <p>Invest all your crypto at one place on one platform.</p>
+                    </div>
+                </div>
+                <div class="choseBox">
+                    <i class="fa-solid fa-chess-knight"></i>
+                    <div class="choseBox-Text">
+                        <h4>TAKE A MARKET TO SELL</h4>
+                        <p>Discover, collect the right crypto collections to buy or sell.</p>
+                    </div>
+                </div>
+                <div class="choseBox">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <div class="choseBox-Text">
+                        <h4>DRIVE YOUR COLLECTION</h4>
+                        <p>We make it easy to Discover, Invest and manage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="mainFoter">
+            <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="footerPrivacy">
+                <p>Privacy</p>
+                <p>Terms of Use</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

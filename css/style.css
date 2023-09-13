@@ -1,0 +1,702 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Martian Mono', monospace;
+}
+ /* Code For Online Only */
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
+ /* end */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(0deg, #0f051d 30%, #130749 70%);
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Data source */
+.datasource {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 10px;
+    z-index: 100;
+}
+
+.datasource a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Nav bar style */
+header {
+    display: flex;
+    width: 100%;
+    padding: 20px 60px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: all .2s;
+    background: #10052a;
+    z-index: 100;
+    box-shadow: -2px -7px 20px #7c4fe5a8;
+}
+
+header h1 {
+    font-family: 'Martian Mono', monospace;
+    color: white;
+    text-transform: uppercase;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Martian Mono', monospace;
+    letter-spacing: 1px;
+}
+
+header ul li:nth-child(5) a {
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.hamburgerMenuBtn {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Landing Page style */
+section.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Landing title style */
+.title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title images style */
+.titleimg {
+    width: 70px;
+    height: 70px;
+    margin: 0 50px;
+    transition: all .3s;
+    animation: imageanmation 2s ease-in-out infinite;
+}
+
+@keyframes imageanmation {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.title span,
+.choseTitle span {
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+    color: transparent;
+    font-size: 3rem;
+}
+
+/* See Prices only mobile style */
+.title a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    margin-top: 50px;
+    display: none;
+}
+
+/* Trending crypto style */
+/* Trending crypto main parent*/
+.trending {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 51px 0 20px 0;
+}
+
+/* Trending crypto box */
+.trend {
+    /* width: 150px; */
+    /* height: 150px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+}
+
+/* Trending Img */
+.trendImg {
+    width: 70px;
+    height: 70px;
+    filter: grayscale(0.8);
+}
+
+/* Trending name , price */
+.name {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0 10px 0;
+    font-size: 0.8rem;
+}
+
+span.change {
+    margin-left: 20px;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.trendninfo {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 50px;
+    text-transform: uppercase;
+}
+
+/* Table section style */
+.table {
+    width: 100%;
+    padding: 40px;
+    height: fit-content;
+}
+
+/* Visible table style */
+.dashboard {
+    width: 100%;
+}
+
+thead {
+    background: linear-gradient(25deg, #2600fc, #ff00ea) !important;
+    border-radius: 15px 15px 0 0;
+    display: block;
+}
+
+.trOnhover:hover {
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(25deg, #2600fc, #ff00ea) !important;
+}
+
+thead tr {
+    border: none !important;
+}
+
+table {
+    width: 100%;
+    color: white;
+}
+
+th,
+td {
+    display: flex;
+    width: calc(100% / 4);
+    gap: 10%;
+    align-items: center;
+}
+
+tr {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    transition: all .3s;
+}
+
+tr:hover {
+    background: #1f0d46;
+}
+
+i.fa-solid.fa-spinner {
+    animation: anime 1.5s ease-in-out infinite;
+    height: fit-content;
+}
+
+@keyframes anime {
+    0% {
+        rotate: 360deg;
+    }
+
+}
+
+/* Coin image style */
+img.coinImg {
+    width: 40px;
+    height: 41px;
+}
+
+.table h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Butons parent style */
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+/* Butonn style  */
+.buttons button {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+}
+
+.active {
+    background: linear-gradient(25deg, #2600fc94, #ff00eaf0);
+    color: white;
+}
+
+/* Chose section style */
+.chose {
+    width: 100%;
+    position: relative;
+    padding: 0 40px;
+    margin-top: 50px;
+}
+
+/* why chose Title style  */
+.choseTitle {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* why chose Title h1 style  */
+.choseTitle h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+/* MainChose parent box style */
+.mainChose {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 3rem;
+}
+
+.choseInfo,
+.choseImg {
+    width: calc(100% / 3 - 5%);
+}
+
+/* ChoseBox Parent style */
+.choseInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Chose Box */
+.choseBox {
+    width: 100%;
+    height: 170px;
+    background-color: hsla(0, 0%, 100%, .05);
+    border: 1px solid hsla(0, 0%, 51%, .25);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Chose Box icon style */
+.choseBox i {
+    align-items: center;
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    border-radius: 0.6000000000000001rem;
+    display: flex;
+    height: 50px;
+    padding: 1.5rem;
+    width: 50px;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Chose Box text style */
+.choseBox-Text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Chose Box text h4 style */
+.choseBox-Text h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* Chose Box text p style */
+.choseBox-Text p {
+    font-weight: unset;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+
+
+.choseImg img {
+    /* Chose image style */
+    width: 100%;
+    height: 430px;
+}
+
+/* Menu Style */
+.mobileMenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    z-index: 100;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -100vw;
+}
+
+/* Menu close button Style */
+.mobileMenu i {
+    color: black;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.mobileMenu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.mobileMenu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.menuActive {
+    left: 0;
+}
+
+.firstCol {
+    margin-right: 30px;
+}
+
+/* Footer style */
+footer {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerPrivacy {
+    display: flex;
+    color: white;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.icons {
+    font-size: 2rem;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands {
+    transition: all .3s;
+    color: white;
+    
+}
+.fa-brands:hover{
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg,#2600fc,#ff00ea);
+     color: transparent;
+}
+
+/* MEDIA QUERIES */
+
+
+/* Style For Landing Page title */
+@media screen and (min-width:1015px) and (max-Width:1150px) {
+
+    .title span,
+    .choseTitle span,
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:550px) and (max-Width:1014px) {
+
+    .title span,
+    .choseTitle span,
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-Width:700px) {
+    .titleimg {
+        display: none;
+    }
+}
+
+@media screen and (max-Width:770px) {
+    .trendninfo {
+        display: none;
+    }
+
+    .trend,
+    .name {
+        font-size: 0.7rem;
+    }
+
+}
+
+/* Style For Tablet */
+@media screen and (min-width:550px) and (max-Width:1023px) {
+    .trending {
+        gap: 5%;
+    }
+
+    /* .trendninfo {
+        display: none;
+    } */
+
+    .mainChose {
+        flex-direction: column;
+    }
+
+    .choseInfo {
+        width: 100%;
+    }
+
+    .choseImg img {
+        width: 70%;
+        height: 100%;
+    }
+
+    header ul li a {
+        font-size: 0.8rem !important;
+    }
+
+    .dashboard {
+        overflow: unset !important;
+    }
+
+    header ul {
+        display: flex !important;
+    }
+
+    .hamburgerMenuBtn {
+        display: none !important;
+    }
+
+    table {
+        width: 100% !important;
+        font-size: 0.8rem !important;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .titleimg {
+        width: 60px;
+        height: 60px
+    }
+}
+
+/* Style For Nav Menu Mobile */
+@media screen and (max-Width:650px) {
+    header ul {
+        display: none !important;
+    }
+
+    .hamburgerMenuBtn {
+        display: block !important;
+    }
+}
+
+/* Style For Mobile */
+@media screen and (max-Width:550px) {
+    body {
+        width: 100vw;
+    }
+
+    .titleimg,
+    .trending,
+    .trendninfo {
+        display: none;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .hamburgerMenuBtn {
+        display: block;
+    }
+
+    .dashboard {
+        overflow: auto;
+    }
+
+    .table {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    /* .table {
+        width: 100;
+    } */
+    .choseTitle {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* th, td {
+        width: calc(100% / 3);
+        gap: 10%;
+
+    } */
+    .coin24h {
+        margin: 0 20px;
+    }
+
+
+    .mainChose {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .choseInfo,
+    .choseImg {
+        width: 100%;
+    }
+
+    .choseImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .choseImg img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .choseBox {
+        height: fit-content;
+        align-items: center;
+    }
+
+    .title {
+        flex-direction: column;
+        font-size: 2.5rem;
+    }
+
+    .title a {
+        display: block;
+    }
+
+    table {
+        width: 200vw;
+    }
+
+    th,
+    td {
+        display: flex;
+        width: calc(100% / 4);
+    }
+
+    footer {
+        /* Footer style */
+        margin-top: 20px;
+        padding: 30px 15px;
+
+    }
+}
+
